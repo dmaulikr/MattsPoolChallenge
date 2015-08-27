@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
+#import "GameScene.h"
 
-@interface GameViewController : UIViewController
+@interface GameViewController : UIViewController <GameSceneDelegate>{
+    NSMutableArray *scores;
+}
+-(void)gameOver: (int) highScore;
 
 @end
